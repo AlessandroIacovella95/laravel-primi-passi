@@ -17,3 +17,12 @@ Route::get('/', function () {
     $name="Hello World";
     return view('home', compact('name'));
 })->name('home');
+
+Route::get('contacts', function () {
+    $contatti=[
+        'Alessandro',
+        'Alessio',
+        'Andrea'
+    ];
+    return view('contact', compact('contatti'));
+})->name('contact');
